@@ -56,7 +56,7 @@ def generate_quiz():
                     }
                 });
 
-                document.getElementById('result').innerHTML = Your score is ${score} out of ${correctAnswers.length}.;
+                document.getElementById('result').innerHTML = `Your score is ${score} out of ${correctAnswers.length}.`;
             }
         </script>
     </body>
@@ -64,11 +64,11 @@ def generate_quiz():
     """
 
     # Save to an HTML file
-    with open("quiz.html", "w") as file:
+    with open("index.html", "w") as file:
         file.write(html_content)
 
     # Open in the default web browser
-    webbrowser.open("quiz.html")
+    webbrowser.open("index.html")
 
 # Run the function
 generate_quiz()
