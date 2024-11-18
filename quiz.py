@@ -56,7 +56,7 @@ def generate_quiz():
                     }
                 });
 
-                document.getElementById('result').innerHTML = Your score is ${score} out of ${correctAnswers.length}.;
+                document.getElementById('result').innerHTML = `Your score is ${score} out of ${correctAnswers.length}.`;
             }
         </script>
     </body>
